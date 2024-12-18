@@ -225,4 +225,117 @@ h1 {
     cursor: pointe
 }
 
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Body Styling */
+#localities {
+    background-color: #f9f9f9;
+    padding: 40px;
+    padding-left: 85px;
+}
+
+/* Container */
+.localities-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading Styling */
+.localities-h1 {
+    font-size: 41px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+h1 strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Localities Wrapper */
+.localities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Locality Box Styling */
+.locality-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(33.33% - 20px); /* Ensures 3 boxes per row */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Title and Places Styling */
+.locality-box .title, .see-more-box .title {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.locality-box .places {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+}
+
+/* Arrow Styling */
+.locality-box .arrow, .see-more-box .arrow {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #bbb;
+}
+
+/* See More Box Styling */
+.see-more-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.see-more-box .title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.see-more-box .arrow {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #bbb;
+}
+
+/* More Localities Section (Initially Hidden) */
+#more-localities {
+    display: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
  
