@@ -114,6 +114,107 @@
             </div>
         </div>       
     </section>
+
+    <div id="localities">
+        <div class="localities-container">
+            <h1 class="localities-h1">Popular localities in and around <strong>Hyderabad</strong></h1>
+            
+            <div class="localities">
+                <!-- Initially visible localities -->
+                <div class="locality-box">
+                    <p class="title">Jubilee Hills</p>
+                    <p class="places">428 places</p>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <div class="locality-box">
+                    <p class="title">Gachibowli</p>
+                    <p class="places">831 places</p>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <div class="locality-box">
+                    <p class="title">Banjara Hills</p>
+                    <p class="places">432 places</p>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <div class="locality-box">
+                    <p class="title">Hitech City</p>
+                    <p class="places">405 places</p>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <div class="locality-box">
+                    <p class="title">Madhapur</p>
+                    <p class="places">895 places</p>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <div class="locality-box">
+                    <p class="title">Kondapur</p>
+                    <p class="places">630 places</p>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <div class="locality-box">
+                    <p class="title">Kukatpally</p>
+                    <p class="places">1518 places</p>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <div class="locality-box">
+                    <p class="title">Begumpet</p>
+                    <p class="places">162 places</p>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <div class="locality-box">
+                    <div class="see-more-box" onclick="toggleMore()">
+                        <p class="title">see more</p>
+                        <span class="arrow">&darr;</span>
+                    </div>
+                </div>
+    
+                <!-- Hidden localities -->
+                <div id="more-localities" style="display: none;">
+                    <div class="locality-box">
+                        <p class="title">Himayath Nagar</p>
+                        <p class="places">232 places</p>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="locality-box">
+                        <p class="title">Tolichowki</p>
+                        <p class="places">293 places</p>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="locality-box">
+                        <p class="title">Ameerpet</p>
+                        <p class="places">348 places</p>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="locality-box">
+                        <p class="title">Somajiguda</p>
+                        <p class="places">72 places</p>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="locality-box">
+                        <p class="title">Film Nagar</p>
+                        <p class="places">110 places</p>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="locality-box">
+                        <p class="title">Paradise Circle</p>
+                        <p class="places">36 places</p>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="locality-box">
+                        <p class="title">Sainikpuri</p>
+                        <p class="places">280 places</p>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <div class="locality-box">
+                        <p class="title">Necklace Road</p>
+                        <p class="places">38 places</p>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="info-container">
         <div class="info-container">
             <!-- Phone Images -->
@@ -233,6 +334,20 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
         feather.replace();
+    </script>
+    <script>
+        function toggleMore() {
+            const moreLocalities = document.getElementById('more-localities');
+            const button = document.querySelector('.see-more-btn');
+
+            if (moreLocalities.style.display === 'none' || moreLocalities.style.display === '') {
+                moreLocalities.style.display = 'flex';
+                button.innerHTML = 'see less &uarr;';
+            } else {
+                moreLocalities.style.display = 'none';
+                button.innerHTML = 'see more &darr;';
+            }
+        }
     </script>
 </body>
 
